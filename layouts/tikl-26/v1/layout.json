@@ -1,0 +1,17 @@
+{
+  "name": "TIKL-26",
+  "version": "1.0.0-research-snapshot",
+  "physical_reference": "ANSI QWERTY",
+  "rows": ["JBLDFQUOYK", "RNTSCIEAH", "WPMGVZX"],
+  "mapping": {
+    "Q":"J","W":"B","E":"L","R":"D","T":"F","Y":"Q","U":"U","I":"O","O":"Y","P":"K",
+    "A":"R","S":"N","D":"T","F":"S","G":"C","H":"I","J":"E","K":"A","L":"H",
+    "Z":"W","X":"P","C":"M","V":"G","B":"V","N":"Z","M":"X"
+  },
+  "unchanged": ["Space","Shift","CapsLock","Control","Alt/Option","Command/Windows","Enter","Backspace","Tab","Escape","numbers","punctuation","navigation"],
+  "computed_holdout": {
+    "robust_cost_qwerty_1": 0.893070,
+    "modelled_reduction_percent": 10.69,
+    "warning": "Computed objective result; not a WPM, health, or injury claim."
+  }
+}
