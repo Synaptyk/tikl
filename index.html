@@ -12,6 +12,7 @@
   <meta property="og:url" content="https://tikl.my/">
   <link rel="canonical" href="https://tikl.my/">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bridge-highlight.css">
 </head>
 <body>
   <header class="nav-wrap">
@@ -73,11 +74,23 @@
           <article><strong>50%</strong><span>of QWERTY letter positions retained</span></article>
         </div>
       </div>
-      <div class="bridge-card" aria-label="TIKL Bridge layout">
+      <div class="bridge-card" aria-label="TIKL Bridge layout. White letters remain on their QWERTY positions; green letters have moved.">
         <div class="bridge-label">Physical QWERTY positions produce</div>
-        <pre>Q W L D F Y U I K P
- R S N T G H A E O
-  Z M C V B J X</pre>
+        <div class="bridge-map" role="img" aria-label="Q W L D F Y U I K P, R S N T G H A E O, Z M C V B J X">
+          <div class="bridge-row bridge-row-top">
+            <span class="retained">Q</span><span class="retained">W</span><span class="moved">L</span><span class="moved">D</span><span class="moved">F</span><span class="retained">Y</span><span class="retained">U</span><span class="retained">I</span><span class="moved">K</span><span class="retained">P</span>
+          </div>
+          <div class="bridge-row bridge-row-home">
+            <span class="moved">R</span><span class="retained">S</span><span class="moved">N</span><span class="moved">T</span><span class="retained">G</span><span class="retained">H</span><span class="moved">A</span><span class="moved">E</span><span class="moved">O</span>
+          </div>
+          <div class="bridge-row bridge-row-bottom">
+            <span class="retained">Z</span><span class="moved">M</span><span class="retained">C</span><span class="retained">V</span><span class="retained">B</span><span class="moved">J</span><span class="moved">X</span>
+          </div>
+        </div>
+        <div class="bridge-legend" aria-label="Legend">
+          <span><i class="legend-retained"></i>QWERTY position retained</span>
+          <span><i class="legend-moved"></i>Letter moved</span>
+        </div>
       </div>
     </section>
 
