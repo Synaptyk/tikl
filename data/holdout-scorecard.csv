@@ -1,0 +1,9 @@
+layout,robust_cost_qwerty_1,modelled_reduction_percent,keys_moved,worst_archetype
+QWERTY,1.000000,0.00,0,conventional_touch
+Dvorak,0.907135,9.29,24,index_middle_dominant
+Colemak,0.923797,7.62,16,index_middle_dominant
+Colemak-DH,0.928128,7.19,21,index_middle_dominant
+TIKL-Char,0.893715,10.63,23,mixed_self_taught
+TIKL-Token,0.892528,10.75,25,mixed_self_taught
+TIKL-Bridge,0.904094,9.59,13,mixed_self_taught
+TIKL-26,0.893070,10.69,25,index_middle_dominant
