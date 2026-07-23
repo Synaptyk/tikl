@@ -19,6 +19,7 @@
       <a class="brand" href="#top" aria-label="The TIKL.MY Keyboard Project home"><span class="brand-name"><span class="brand-tikl">TIKL</span><span class="brand-dot">.</span><span class="brand-my">MY</span></span><span class="brand-project">Keyboard Project</span></a>
       <div class="nav-links">
         <a href="#layout">Layout</a>
+        <a href="#bridge">Bridge</a>
         <a href="#research">Research</a>
         <a href="#install">Install</a>
         <a href="https://github.com/Synaptyk/tikl">GitHub</a>
@@ -34,6 +35,7 @@
         <p class="lede"><strong>TIKL</strong> means <strong>Token-Informed Keyboard Layout</strong>: a project exploring whether language-model tokenisation, language statistics and human motor modelling can produce better keyboard mappings.</p>
         <div class="actions">
           <a class="button primary" href="#layout">See TIKL-26</a>
+          <a class="button secondary" href="#bridge">See TIKL Bridge</a>
           <a class="button secondary" href="https://github.com/Synaptyk/tikl">View the source</a>
         </div>
       </div>
@@ -58,6 +60,25 @@
         <article><strong>1 key</strong><span>one ordinary character per ordinary key action</span></article>
       </div>
       <p class="qualification">The score is a computed model result, not a prediction of typing speed, injury reduction or medical benefit.</p>
+    </section>
+
+    <section id="bridge" class="section bridge-section">
+      <div class="bridge-copy">
+        <p class="eyebrow">Migration-friendly layout</p>
+        <h2>TIKL Bridge</h2>
+        <p>Bridge keeps half of QWERTY’s letter positions while preserving most of the modelled gain. It is the easier path for people who want a substantial improvement without relearning nearly the entire alphabet.</p>
+        <div class="bridge-stats">
+          <article><strong>9.59%</strong><span>modelled reduction from QWERTY</span></article>
+          <article><strong>13 keys</strong><span>moved rather than 25</span></article>
+          <article><strong>50%</strong><span>of QWERTY letter positions retained</span></article>
+        </div>
+      </div>
+      <div class="bridge-card" aria-label="TIKL Bridge layout">
+        <div class="bridge-label">Physical QWERTY positions produce</div>
+        <pre>Q W L D F Y U I K P
+ R S N T G H A E O
+  Z M C V B J X</pre>
+      </div>
     </section>
 
     <section id="research" class="section split">
