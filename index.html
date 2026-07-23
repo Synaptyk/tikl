@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIKL — Token-Informed Keyboard Layout</title>
+  <meta name="description" content="TIKL is an open-source keyboard-layout research project using language-model tokenisation, language statistics, human motor models and computational optimisation.">
+  <meta name="theme-color" content="#111318">
+  <meta property="og:title" content="TIKL — Token-Informed Keyboard Layout">
+  <meta property="og:description" content="Open-source research into better keyboard mappings for real-world typing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tikl.my/">
+  <link rel="canonical" href="https://tikl.my/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="TIKL home">TIKL<span>.</span>MY</a>
+      <div class="nav-links">
+        <a href="#layout">Layout</a>
+        <a href="#research">Research</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/Synaptyk/tikl">GitHub</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Open-source keyboard research</p>
+        <h1>Tickle the keys<br><span>differently.</span></h1>
+        <p class="lede"><strong>TIKL</strong> means <strong>Token-Informed Keyboard Layout</strong>: a project exploring whether language-model tokenisation, language statistics and human motor modelling can produce better keyboard mappings.</p>
+        <div class="actions">
+          <a class="button primary" href="#layout">See TIKL-26</a>
+          <a class="button secondary" href="https://github.com/Synaptyk/tikl">View the source</a>
+        </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <div class="mark">TIKL</div>
+        <div class="mark-sub">TOKEN · MOTION · KEYS</div>
+      </div>
+    </section>
+
+    <section id="layout" class="section layout-section">
+      <div class="section-heading">
+        <p class="eyebrow">Primary research layout</p>
+        <h2>TIKL-26 v1</h2>
+        <p>Physical ANSI QWERTY positions produce the characters shown below. Space, punctuation, numbers and modifiers remain conventional.</p>
+      </div>
+      <div class="layout-card">
+        <img src="assets/tikl26-layout.svg" alt="TIKL-26 keyboard layout showing the output letter on each physical QWERTY key">
+      </div>
+      <div class="metric-grid">
+        <article><strong>0.893070</strong><span>holdout motor score, QWERTY = 1.0</span></article>
+        <article><strong>3 models</strong><span>touch, index/middle-dominant and mixed self-taught</span></article>
+        <article><strong>1 key</strong><span>one ordinary character per ordinary key action</span></article>
+      </div>
+      <p class="qualification">The score is a computed model result, not a prediction of typing speed, injury reduction or medical benefit.</p>
+    </section>
+
+    <section id="research" class="section split">
+      <div>
+        <p class="eyebrow">What makes it different</p>
+        <h2>Tokens inform the path.<br>They do not become macros.</h2>
+      </div>
+      <div class="prose">
+        <p>TIKL decodes tokenizer structure back into literal characters that humans type. It studies longer recurring paths, word boundaries, morphology, keyboard geometry and multiple typing styles while preserving direct access to every letter.</p>
+        <p>The first ablation found a scientifically modest result: token information added a small refinement beyond a strong character n-gram optimiser. TIKL publishes that result openly rather than exaggerating it.</p>
+        <p><a class="text-link" href="docs/RESEARCH_REPORT.md">Read the research snapshot →</a></p>
+      </div>
+    </section>
+
+    <section id="install" class="section">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Install and test</p>
+        <h2>Use the keyboard you already own.</h2>
+        <p>Ready-to-test mappings are available for Windows, macOS and Linux. Keep an emergency fallback during first installation.</p>
+      </div>
+      <div class="platform-grid">
+        <a href="mappings/windows/tikl26-physical-shortcuts.ahk"><strong>Windows</strong><span>AutoHotkey v2</span></a>
+        <a href="mappings/macos/tikl26-physical-shortcuts.json"><strong>macOS</strong><span>Karabiner-Elements</span></a>
+        <a href="mappings/linux/tikl26"><strong>Linux</strong><span>XKB and keyd</span></a>
+      </div>
+      <div class="center-actions">
+        <a class="button primary" href="INSTALL.md">Installation guide</a>
+        <a class="button secondary" href="docs/LEARNING.md">Learning guide</a>
+        <a class="button secondary" href="docs/TRIAL_PROTOCOL.md">Trial protocol</a>
+      </div>
+    </section>
+
+    <section class="section callout">
+      <p class="eyebrow">Open project</p>
+      <h2>Inspect it. Challenge it. Improve it.</h2>
+      <p>TIKL is licensed under Apache 2.0. Contributions to motor modelling, corpus provenance, tokenizer analysis, mappings and empirical trials are welcome.</p>
+      <a class="button light" href="https://github.com/Synaptyk/tikl">Contribute on GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>TIKL.MY</strong><br><span>Token-Informed Keyboard Layout</span></div>
+    <div class="footer-links"><a href="https://tikl.dev">tikl.dev</a><a href="https://github.com/Synaptyk/tikl">GitHub</a><a href="LICENSE">Apache 2.0</a></div>
+  </footer>
+</body>
+</html>
