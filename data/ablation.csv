@@ -1,0 +1,6 @@
+objective,own_holdout,common_hybrid_holdout,pure_character_holdout,hamming_vs_primary
+character_only,0.921693,0.893715,0.921693,14
+token_only,0.846077,0.892528,0.924352,4
+hybrid_boundary,0.897857,0.892501,0.922388,11
+hybrid_internal,0.901730,0.893540,0.923333,14
+full_hybrid,0.893070,0.893070,0.922787,0
